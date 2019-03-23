@@ -23,6 +23,25 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <goals>  
+              <goal>java</goal>  
+            </goals>
+            <configuration>  
+              <mainClass>com.example.MyTask</mainClass>
+            </configuration> 
+          </execution>
+        </executions> 
+      </plugin>
+    </plugins>
+  </build>
 
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
